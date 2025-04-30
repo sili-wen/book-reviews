@@ -7,7 +7,7 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "generate": "drizzle-kit generate:pg",
-    "migrate": "node -r ts-node/register src/migrate.ts",
+    "migrate": "node -r ts-node/register db/migrate.ts",
     "studio": "drizzle-kit studio"
   },
   "dependencies": {

@@ -4,8 +4,8 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig({
-  schema: './src/schema/*.ts',
-  out: './drizzle',
+  schema: './db/schema/*.ts',
+  out: './db/migrations',
   driver: 'pg',
   dbCredentials: {
     connectionString: process.env.DATABASE_URL || '',
