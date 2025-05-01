@@ -15,6 +15,13 @@
       "when": 1746072834823,
       "tag": "0001_dizzy_the_captain",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1746073177526,
+      "tag": "0002_lively_umar",
+      "breakpoints": true
     }
   ]
 }
