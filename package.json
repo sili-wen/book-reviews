@@ -1,7 +1,7 @@
 {
   "name": "book-reviews",
   "version": "0.1.0",
-  "description": "Book reviews application with multiple services",
+  "description": "Book reviews application with api service (api-srv), application service (app-srv), and database (app-db)",
   "private": true,
   "scripts": {
     "db:generate": "cd apps/app-db && pnpm run generate",

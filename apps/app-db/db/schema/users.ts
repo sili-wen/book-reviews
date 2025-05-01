@@ -5,8 +5,8 @@ export const users = pgTable("users", {
   ...idColumn("usr"),
   ...auditColumns(),
   email: varchar("email", { length: 255 }).notNull().unique(),
-  first_name: varchar("first_name", { length: 255 }).notNull(),
-  last_name: varchar("last_name", { length: 255 }).notNull(),
-  username: varchar("username", { length: 255 }).notNull().unique(),
+  firstName: varchar("first_name", { length: 255 }).notNull(),
+  lastName: varchar("last_name", { length: 255 }).notNull(),
+  userName: varchar("username", { length: 255 }).notNull().unique(),
   password: varchar("password", { length: 255 }),
 });

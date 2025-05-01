@@ -24,11 +24,11 @@ export const bookCategoryEnum = pgEnum('book_category', [
 export const books = pgTable("books", {
   ...idColumn("bk"),
   ...auditColumns(),
-  author_id: varchar("author_id", { length: 30 }).references(() => authors.id),
+  authorId: varchar("author_id", { length: 30 }).references(() => authors.id),
   name: varchar("name", { length: 255 }).notNull(),
   description: text("description"),
-  published_at: date("published_at"),
+  publishedAt: date("published_at"),
   language: varchar("language", { length: 2 }).notNull(),
-  page_count: integer("page_count"),
+  pageCount: integer("page_count"),
   categories: bookCategoryEnum('categories').array(),
 });

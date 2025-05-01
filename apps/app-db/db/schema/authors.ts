@@ -37,9 +37,9 @@ export const nationalityEnum = pgEnum('nationality', [
 export const authors = pgTable("authors", {
   ...idColumn("aut"),
   ...auditColumns(),
-  first_name: varchar("first_name", { length: 255 }).notNull(),
-  last_name: varchar("last_name", { length: 255 }).notNull(),
+  firstName: varchar("first_name", { length: 255 }).notNull(),
+  lastName: varchar("last_name", { length: 255 }).notNull(),
   email: varchar("email", { length: 255 }).notNull().unique(),
-  birth_date: date("birth_date"),
+  birthDate: date("birth_date"),
   nationality: nationalityEnum("nationality"),
 })

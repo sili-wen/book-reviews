@@ -6,8 +6,8 @@ import { users } from "./users";
 export const bookReviews = pgTable("book_reviews", {
   ...idColumn("br"),
   ...auditColumns(),
-  book_id: varchar("book_id", { length: 30 }),
-  user_id: varchar("user_id", { length: 30 }).references(() => users.id),
+  bookId: varchar("book_id", { length: 30 }),
+  userId: varchar("user_id", { length: 30 }).references(() => users.id),
   rating: integer("rating").notNull(),
   title: varchar("title", { length: 255 }),
   body: text("body"),
