@@ -1,0 +1,19 @@
+{
+  "name": "book-reviews",
+  "version": "0.1.0",
+  "description": "Book reviews application with multiple services",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "db:generate": "cd apps/app-db && npm run generate",
+    "db:migrate": "cd apps/app-db && npm run migrate",
+    "db:studio": "cd apps/app-db && npm run studio"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "author": "Sili Wen"
+} 

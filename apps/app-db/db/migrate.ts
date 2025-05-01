@@ -5,10 +5,8 @@ import * as path from 'path';
 
 dotenv.config();
 
-// Get absolute path to migrations folder
 const migrationsFolder = path.join(__dirname, 'migrations');
 
-// Run migrations
 async function runMigrations() {
   console.log('Running migrations...');
   console.log(`Using migrations from: ${migrationsFolder}`);

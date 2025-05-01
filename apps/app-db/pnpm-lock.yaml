@@ -17,6 +17,9 @@ importers:
       pg:
         specifier: ^8.11.3
         version: 8.15.6
+      ulid:
+        specifier: ^2.4.0
+        version: 2.4.0
     devDependencies:
       '@types/node':
         specifier: ^20.11.24
@@ -749,6 +752,10 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  ulid@2.4.0:
+    resolution: {integrity: sha512-fIRiVTJNcSRmXKPZtGzFQv9WRrZ3M9eoptl/teFJvjOzmpU+/K/JH6HZ8deBfb5vMEpicJcLn7JmvdknlMq7Zg==}
+    hasBin: true
+
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
@@ -1335,6 +1342,8 @@ snapshots:
   type@2.7.3: {}
 
   typescript@5.8.3: {}
+
+  ulid@2.4.0: {}
 
   undici-types@6.19.8: {}
 
