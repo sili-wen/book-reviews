@@ -21,7 +21,7 @@ export const bookCategoryEnum = pgEnum('book_category', [
   'children'
 ]);
 
-export const users = pgTable("books", {
+export const books = pgTable("books", {
   ...idColumn("bk"),
   ...auditColumns(),
   author_id: varchar("author_id", { length: 30 }).references(() => authors.id),
