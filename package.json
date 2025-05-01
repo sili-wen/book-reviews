@@ -12,5 +12,12 @@
     "node": ">=18.0.0"
   },
   "packageManager": "pnpm@8.15.0",
-  "author": "Sili Wen"
-} 
+  "author": "Sili Wen",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3"
+  }
+}
