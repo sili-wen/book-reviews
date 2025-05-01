@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "description": "Book reviews application with multiple services",
   "private": true,
-  "workspaces": [
-    "apps/*"
-  ],
   "scripts": {
-    "db:generate": "cd apps/app-db && npm run generate",
-    "db:migrate": "cd apps/app-db && npm run migrate",
-    "db:studio": "cd apps/app-db && npm run studio"
+    "db:generate": "cd apps/app-db && pnpm run generate",
+    "db:migrate": "cd apps/app-db && pnpm run migrate",
+    "db:studio": "cd apps/app-db && pnpm run studio"
   },
   "engines": {
     "node": ">=18.0.0"
