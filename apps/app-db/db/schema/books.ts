@@ -1,5 +1,6 @@
 import { pgTable, varchar, text, timestamp, boolean, integer, date, pgEnum } from "drizzle-orm/pg-core";
 import { idColumn, auditColumns } from "./utils";
+import { authors } from "./authors";
 
 // Define categories enum
 export const bookCategoryEnum = pgEnum('book_category', [
@@ -23,6 +24,7 @@ export const bookCategoryEnum = pgEnum('book_category', [
 export const users = pgTable("books", {
   ...idColumn("bk"),
   ...auditColumns(),
+  author_id: varchar("author_id", { length: 30 }).references(() => authors.id),
   name: varchar("name", { length: 255 }).notNull(),
   description: text("description"),
   published_at: date("published_at"),
